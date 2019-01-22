@@ -5,6 +5,7 @@
       <a class="nav-link" href="#">Active</a>
       <a class="nav-link active"><router-link :to="'/'">HELLO1</router-link></a>
       <a class="nav-link"><router-link :to="'/2'">HELLO2</router-link></a>
+      <a class="nav-link"><router-link :to="'/List'">List</router-link></a>
       <select @change="changeStatus" v-model="status">
       <option value="線上">線上</option>
       <option value="線下">線下</option>
@@ -22,7 +23,7 @@ export default {
     return {
       status: '線上',
       mystatus: '線上',
-      username: ''
+      username: 'Maureen'
     }
   },
   methods:{
